@@ -16,5 +16,10 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
