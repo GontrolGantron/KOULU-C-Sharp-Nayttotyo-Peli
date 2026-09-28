@@ -19,7 +19,9 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Form3 f3 = new Form3();
+            f3.Show();
+            Visible = false;
         }
 
         private void label2_Click(object sender, EventArgs e)

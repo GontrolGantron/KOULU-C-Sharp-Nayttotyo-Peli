@@ -14,6 +14,7 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
         [STAThread]
         static void Main()
         {
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
