@@ -26,5 +26,17 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
         {
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2  f2 = new Form2();
+            f2.Show();
+            Visible = false;
+        }
     }
 }
