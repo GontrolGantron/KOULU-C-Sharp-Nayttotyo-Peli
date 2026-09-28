@@ -21,5 +21,10 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
