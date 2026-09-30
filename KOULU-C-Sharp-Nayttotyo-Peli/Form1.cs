@@ -40,5 +40,12 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
             f2.Show();
             Visible = false;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form4 f4 = new Form4();
+            f4.Show();
+            Visible = false;
+        }
     }
 }
