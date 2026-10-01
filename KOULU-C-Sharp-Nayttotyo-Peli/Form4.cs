@@ -16,5 +16,20 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
         {
             InitializeComponent();
         }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+            UpdateInventory();
+        }
+
+        private void UpdateInventory()
+        {
+            listBox1.Items.Clear();
+
+            foreach (string item in Inventory.Items)
+            {
+                listBox1.Items.Add(item);
+            }
+        }
     }
 }

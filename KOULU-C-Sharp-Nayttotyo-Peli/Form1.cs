@@ -31,12 +31,12 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            UpdateInventory();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2  f2 = new Form2();
+            Form2 f2 = new Form2();
             f2.Show();
             Visible = false;
         }
@@ -46,6 +46,16 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
             Form4 f4 = new Form4();
             f4.Show();
             Visible = false;
+        }
+
+        private void UpdateInventory()
+        {
+            listBox1.Items.Clear();
+
+            foreach (string item in Inventory.Items)
+            {
+                listBox1.Items.Add(item);
+            }
         }
     }
 }
