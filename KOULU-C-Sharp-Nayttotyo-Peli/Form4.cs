@@ -31,5 +31,10 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
                 listBox1.Items.Add(item);
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Remove(listBox1.SelectedItem);
+        }
     }
 }

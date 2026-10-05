@@ -37,6 +37,7 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
                 listBox1.Items.Add(item);
             }
         }
+
         private void Form2_Load(object sender, EventArgs e)
         {
             UpdateInventory();
