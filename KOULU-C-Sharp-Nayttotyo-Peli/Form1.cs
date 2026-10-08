@@ -12,15 +12,22 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
 {
     public partial class Form1 : Form
     {
+        public int Gold = 100;
+        public int XP = 0;
+
+        public static Form1 instance;
         public Form1()
         {
             InitializeComponent();
+            instance = this;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             Form3 f3 = new Form3();
+            f3.Gold = Gold;
             f3.Show();
+            f3.UpdateInventory();
             Visible = false;
         }
 
@@ -37,14 +44,18 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
         private void button1_Click(object sender, EventArgs e)
         {
             Form2 f2 = new Form2();
+            f2.Gold = Gold;
             f2.Show();
+            f2.UpdateInventory();
             Visible = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Form4 f4 = new Form4();
+            f4.Gold = Gold;
             f4.Show();
+            f4.UpdateInventory();
             Visible = false;
         }
 
@@ -56,6 +67,9 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
             {
                 listBox1.Items.Add(item);
             }
+
+            label5.Text = $"Gold: {Gold}";
+            label6.Text = $"XP: {XP}";
         }
     }
 }

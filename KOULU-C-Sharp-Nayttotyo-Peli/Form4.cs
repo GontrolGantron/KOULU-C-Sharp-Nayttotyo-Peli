@@ -12,6 +12,9 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
 {
     public partial class Form4 : Form
     {
+        public int Gold;
+        public int XP;
+
         public Form4()
         {
             InitializeComponent();
@@ -22,7 +25,7 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
             UpdateInventory();
         }
 
-        private void UpdateInventory()
+        public void UpdateInventory()
         {
             listBox1.Items.Clear();
 
@@ -30,6 +33,9 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
             {
                 listBox1.Items.Add(item);
             }
+
+            label5.Text = $"Gold: {Gold}";
+            label6.Text = $"XP: {XP}";
         }
 
         private void button3_Click(object sender, EventArgs e)

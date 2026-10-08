@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,6 +13,9 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
 {
     public partial class Form3 : Form
     {
+        public int Gold;
+        public int XP;
+
         public Form3()
         {
             InitializeComponent();
@@ -24,12 +28,22 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
             Visible = false;
         }
 
+        public void UpdateInventory()
+        {
+            label3.Text = $"Gold: {Gold}";
+        }
+
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
