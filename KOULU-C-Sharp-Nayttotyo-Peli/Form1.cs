@@ -22,6 +22,7 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
             instance = this;
         }
 
+        // Nappi kaivokseen
         private void button3_Click(object sender, EventArgs e)
         {
             Form3 f3 = new Form3();
@@ -36,11 +37,13 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
 
         }
 
+        // Päivitä inventoori kun Form1 avataan
         private void Form1_Load(object sender, EventArgs e)
         {
             UpdateInventory();
         }
 
+        // Nappi kauppaan
         private void button1_Click(object sender, EventArgs e)
         {
             Form2 f2 = new Form2();
@@ -50,6 +53,7 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
             Visible = false;
         }
 
+        // Nappi taisteluun
         private void button2_Click(object sender, EventArgs e)
         {
             Form4 f4 = new Form4();
@@ -59,6 +63,7 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
             Visible = false;
         }
 
+        // Päivitä inventoori
         private void UpdateInventory()
         {
             listBox1.Items.Clear();

@@ -22,6 +22,7 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
             instance = this;
         }
 
+        // Päivitä inventoori kun Form2 avataan
         private void Form2_Load(object sender, EventArgs e)
         {
             UpdateInventory();
@@ -31,13 +32,16 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
         {
         }
 
+        // Nappi kotiin
         private void button4_Click(object sender, EventArgs e)
         {
             Form1 f1 = new Form1();
             f1.Show();
             this.Hide();
+            f1.Gold = Gold;
         }
 
+        // Päivitä inventoori
         public void UpdateInventory()
         {
             listBox1.Items.Clear();
@@ -48,23 +52,35 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
             }
             label5.Text = $"Gold: {Gold}";
         }
-
+        
+        // Health Potion nappi
         private void button1_Click(object sender, EventArgs e)
         {
-            Inventory.Items.Add("Health Potion x1");
-            UpdateInventory();
+            if (Gold >= 80) {
+                Inventory.Items.Add("Health Potion x1");
+                Gold -= 80;
+                UpdateInventory();
+            }
         }
 
+        // Power Potion nappi
         private void button2_Click(object sender, EventArgs e)
         {
-            Inventory.Items.Add("Power Potion x1");
-            UpdateInventory();
+            if (Gold >= 100) {
+                Inventory.Items.Add("Power Potion x1");
+                Gold -= 100;
+                UpdateInventory();
+            }
         }
 
+        // Chaos Potion nappi
         private void button3_Click(object sender, EventArgs e)
         {
-            Inventory.Items.Add("Chaos Potion x1");
-            UpdateInventory();
+            if (Gold >= 120) {
+                Inventory.Items.Add("Chaos Potion x1");
+                Gold -= 120;
+                UpdateInventory();
+            }
         }
     }
 }

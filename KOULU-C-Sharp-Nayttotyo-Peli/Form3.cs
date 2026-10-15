@@ -21,6 +21,7 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
             InitializeComponent();
         }
 
+        // Nappi kotiin
         private void button2_Click(object sender, EventArgs e)
         {
             Form1 f1 = new Form1();
@@ -28,6 +29,7 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
             Visible = false;
         }
 
+        // Päivitä inventoori
         public void UpdateInventory()
         {
             label3.Text = $"Gold: {Gold}";
