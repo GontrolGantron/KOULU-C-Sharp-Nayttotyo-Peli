@@ -69,7 +69,7 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
         {
             listBox1.Items.Remove(listBox1.SelectedItem);
 
-
+            UpdateInventory();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -98,6 +98,14 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
         {
             PlayerHP -= 2;
             UpdateInventory();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
+            this.Close();
+            f1.Gold = Gold;
         }
     }
 }

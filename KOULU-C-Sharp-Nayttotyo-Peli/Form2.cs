@@ -37,7 +37,7 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
         {
             Form1 f1 = new Form1();
             f1.Show();
-            this.Hide();
+            this.Close();
             f1.Gold = Gold;
         }
 

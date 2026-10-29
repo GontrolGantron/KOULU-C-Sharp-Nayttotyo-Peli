@@ -47,7 +47,8 @@ namespace KOULU_C_Sharp_Nayttotyo_Peli
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Gold += 1;
+            UpdateInventory();
         }
     }
 }
