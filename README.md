@@ -1,0 +1,1 @@
+Tämä on lopputyö C# koulu kurssista. Projekti käyttää Windows Formsia. Pelissä voit ostaa tavaroita, taistella ja päivittää omaa hahmoasi kukistamalla vihollisia. Pelissä ei ole varsinaista loppua, mutta pelaajan pitää selvitä mahdollisimman pitkälle.
